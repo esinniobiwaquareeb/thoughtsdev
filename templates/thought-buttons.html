@@ -1,0 +1,14 @@
+<div>
+    <button ng-click="openThoughtDetail(thought.$id)" class="button button-outline button-calm
+       icon ion-reply button-small">
+        Comment
+    </button>
+    <button ng-click="favorite(thought.$id)" ng-if="!isFavoritedThought(thought.$id)"
+            class="button button-outline button-energized icon ion-star button-small">
+        Favorite
+    </button>
+    <button ng-click="unfavorite(thought.$id)" ng-if="isFavoritedThought(thought.$id)"
+            class="button button-outline button-assertive icon ion-ios7-star-outline button-small">
+        Unfavorite
+    </button>
+</div>

@@ -1,0 +1,146 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #4a87ee !default;
+$calm:                            #43cee6 !default;
+$balanced:                        #66cc33 !default;
+$energized:                       #f0b840 !default;
+$assertive:                       #ef4e3a !default;
+$royal:                           #8a6de9 !default;
+$dark:                            #444 !default;
+
+Color palette and pattern from: http://www.colourlovers.com/pattern/582552/saturday_warmth
+Another options: 
+    http://www.colourlovers.com/pattern/465753/Navaho
+    http://www.colourlovers.com/pattern/1429395/400_Congrats
+*/
+$stable: #FCEBB6;
+$energized: #F07818;
+$calm: #038675;
+$royal: #352B39;
+$turquoise: #78C0A8;
+$grey: #f8f8f8;
+$gold: #F0A830;
+$logo-height: 500px;
+$logo-width: 600px;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../ionic/fonts" !default;
+
+// Include all of Ionic
+@import "../ionic/scss/ionic";
+
+/* 
+    Created on : 01/06/2014, 19:29:58
+    Author     : Vytor
+*/
+
+.quarter {
+    width: 25%;
+}
+
+.a-quarter{
+    width: 24%;
+}
+
+.half {
+    width: 50%;
+}
+
+.three-quarters {
+    width: 75%;
+}
+
+.third {
+    width: 33.333%;
+}
+
+.two-thirds {
+    width: 66.666%;
+}
+
+.full {
+    width: 100%;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.login{
+    border-radius: 5px;
+}
+
+.pattern{
+    background: url(../img/400.png);
+}
+
+.bar-logged{
+    background: url(../img/402.png);
+    background-position: 0px;
+    .title{
+        color: $light;
+    }
+    .button{
+        color: $light;
+    }
+}
+
+.text-area{
+    height: 100%;
+}
+
+.page{
+    background: lighten($turquoise, 20%);
+    .card{
+        background: $grey;
+    }
+}
+
+.gold-bg{
+    background: $gold;
+}
+
+.logo{
+    width: $logo-width;
+    height: $logo-height;
+    background: url(../img/logo.png) no-repeat center top;
+    left: 50%;
+}
+
+.note{
+    font-weight: lighter;
+    font-size: smaller;
+    font-stretch: condensed;
+    color: #aaa;
+}
+
+.user{
+    font-weight: bold;
+    .time{
+        @extend .note;
+    }
+    a{
+        text-decoration: none;
+        color: $royal;
+    }
+}
+
+.popup{
+    -webkit-filter:blur(20px);
+    opacity: .25;
+    background-color: #f7f7f7;
+}
